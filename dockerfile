@@ -3,7 +3,7 @@ WORKDIR /app
 RUN npm i -g @nestjs/cli
 COPY package.json package-lock.json ./
 RUN npm i
-# CMD ["npm","run","start:dev"]
+CMD ["npm","run","start:dev"]
 
 FROM node:22.16.0 as dev-deps
 WORKDIR /app
